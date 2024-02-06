@@ -2,7 +2,7 @@ import streamlit as st
 import os 
 from openai import OpenAI
 
-os.environ['OPENAPI_API_KEY']= st.secrets['api_key']
+os.environ['OPENAPI_API_KEY']= st.secrets['OPENAI_API_KEY']
 st.title('이미지 생성기 입니다.')
 
 with st.form("form"):
